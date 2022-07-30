@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "SourceSansPro";
+  src: url(../fonts/SourceSansPro-Regular.ttf) format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url(../fonts/SourceSansPro-Italic.ttf) format('truetype');
+  font-weight: italic;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url(../fonts/SourceSansPro-SemiBold.ttf) format('truetype');
+  font-weight: bold;
+}
+
 :root {
   --color-primary: rgb(255, 255, 255);
   --color-secondary: rgb(32, 32, 32);
@@ -8,6 +26,8 @@ html {
 }
 
 .navbar {
+  font-family: 'SourceSansPro';
+  font-weight: bold;
   background-color: var(--color-secondary);
   color: var(--color-primary);
   width: 100%;
