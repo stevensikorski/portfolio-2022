@@ -1,31 +1,32 @@
 @font-face {
-  font-family: "SourceSansPro-Regular";
-  src: url(../fonts/SourceSansPro-Regular.ttf);
-}
-
-@font-face {
-  font-family: "SourceSansPro-Bold";
-  src: url(../fonts/SourceSansPro-SemiBold.ttf);
-}
-
-@font-face {
-  font-family: "SourceSansPro-Italic";
-  src: url(../fonts/SourceSansPro-Italic.ttf);
+  font-family: "Helvectica"; 
+  src: url(../fonts/Helvetica.ttf)
 }
 
 :root {
-  --color-primary: rgb(255, 255, 255);
-  --color-secondary: rgb(32, 32, 32);
+  --color-primary: rgb(0, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: white;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.navbar {
-  font-family: 'SourceSansPro-Regular';
-  background-color: var(--color-secondary);
-  color: var(--color-primary);
+.header {
   width: 100%;
-  height: 10%;
+  height: 68px;
+  padding: 10;
+  background-color: var(--color-primary);
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-primary);
+  padding: 16px 16px;
 }
