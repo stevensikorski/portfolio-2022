@@ -8,7 +8,9 @@
   --color-secondary: rgb(0, 0, 0);
   --color-white: rgb(248, 248, 248);
   --color-black: rgb(32, 32, 32);
+  --color-border: rgb(211, 211, 211);
   --color-transparent: rgba(0, 0, 0, 0);
+  --color-text: rgba(0, 0, 0, 0.25);
 }
 
 * {
@@ -17,18 +19,9 @@
   background-color: var(--color-transparent);
 }
 
-html {
+body, html {
+  height: 100%;
   scroll-behavior: smooth;
-}
-
-.background {
-  height: 600px;
-  background-position: 10%;
-  background-image: url(../images/background.png);
-  background-size: cover;
-  border-bottom-width: 3px;
-  border-bottom-style: solid;
-  border-bottom-color: lightgray;
 }
 
 .header {
@@ -47,7 +40,6 @@ html {
   height: 36px;
   width: 36px;
   float: left;
-  filter: brightness(1);
 }
 
 .name {
@@ -58,7 +50,29 @@ html {
   padding: 10px 48px;
 }
 
+.background {
+  height: 100%;
+  background-image: url(../images/background.png);
+  background-size: cover;
+  background-position: 10%;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--color-border);
+}
+
+.bold-text {
+  height: 100%;
+  color: white;
+  font-family: "Helvectica";
+  font-weight: 900;
+  font-size: 32px;
+  text-shadow: 4px 4px var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   height: 2000px;
-  background-color: var(--color-transparent);
+  background-color: white;
 }
