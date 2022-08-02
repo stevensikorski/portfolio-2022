@@ -60,7 +60,7 @@ body, html {
   border-bottom-color: var(--color-border);
 }
 
-.bold-text {
+.name-title {
   height: 100%;
   color: white;
   font-family: "Helvectica";
