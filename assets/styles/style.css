@@ -6,17 +6,14 @@
 :root {
   --color-primary: rgb(0, 0, 0);
   --color-secondary: rgb(0, 0, 0);
-  --color-white: rgb(248, 248, 248);
   --color-black: rgb(32, 32, 32);
-  --color-border: rgb(211, 211, 211);
+  --color-border: rgb(229, 229, 229);
   --color-transparent: rgba(0, 0, 0, 0);
-  --color-text: rgba(0, 0, 0, 0.25);
 }
 
 * {
   margin: 0;
   padding: 0;
-  background-color: var(--color-transparent);
 }
 
 body, html {
@@ -26,13 +23,14 @@ body, html {
 
 .header {
   height: 36px;
-  padding: 16px 16px;
+  width: 100%;
   position: fixed;
   background-color: var(--color-transparent);
 }
 
-.header-content {
+.navigation {
   height: 100%;
+  margin: 16px;
   background-color: var(--color-transparent);
 }
 
@@ -42,37 +40,75 @@ body, html {
   float: left;
 }
 
-.name {
-  color: white;
-  font-family: "Helvectica";
-  font-weight: 900;
-  font-size: 16px;
-  padding: 10px 48px;
+li, a {
+  color: rgba(255, 255, 255, 1);
+  font-family: "Helvetica";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 2;
+  height: 36px;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.tabs {
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  float: right;
+} 
+
+.tabs li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+.tabs li a:hover {
+  color: rgba(255, 255, 255, 1);
 }
 
 .background {
   height: 100%;
-  background-image: url(../images/background.png);
+  background-image: url(../images/background-blur.png);
   background-size: cover;
   background-position: 10%;
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(--color-border);
 }
 
-.name-title {
-  height: 100%;
-  color: white;
+.title {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.75);
   font-family: "Helvectica";
   font-weight: 900;
-  font-size: 32px;
-  text-shadow: 4px 4px var(--color-text);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: clamp(1rem, 3.5vw, 3.5rem);
+  line-height: 1.2;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
+
 .container {
-  height: 2000px;
+  height: 100%;
+}
+
+.container .about {
+  height: 100%;
+  background-color: white;
+}
+
+.container .projects {
+  height: 100%;
+  background-color: var(--color-black);
+}
+
+.container .contact {
+  height: 100%;
   background-color: white;
 }
