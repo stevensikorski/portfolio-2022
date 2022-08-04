@@ -7,7 +7,6 @@ window.addEventListener("scroll", function(){
     let logo = document.querySelector(".logo");
     let tabs = document.querySelectorAll("li a");
 
-
     if (scroll < height - padding || scroll > 2 * height - padding && scroll < 3 * height - padding)
     {
         logo.style.filter = "invert(0)";

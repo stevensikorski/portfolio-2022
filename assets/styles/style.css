@@ -1,14 +1,6 @@
 @font-face {
-  font-family: "Helvectica"; 
+  font-family: Helvectica; 
   src: url(../fonts/Helvetica.ttf)
-}
-
-:root {
-  --color-primary: rgb(0, 0, 0);
-  --color-secondary: rgb(0, 0, 0);
-  --color-black: rgb(32, 32, 32);
-  --color-border: rgb(229, 229, 229);
-  --color-transparent: rgba(0, 0, 0, 0);
 }
 
 * {
@@ -25,13 +17,11 @@ body, html {
   height: 68px;
   width: 100%;
   position: fixed;
-  background-color: var(--color-transparent);
 }
 
 .navigation {
   height: 36px;
   margin: 16px;
-  background-color: var(--color-transparent);
 }
 
 .logo {
@@ -66,7 +56,8 @@ li, a {
 }
 
 .tabs li a:hover {
-  color: rgba(255, 255, 255, 1);
+  color: rgb(255, 255, 255);
+  opacity: 0.75;
 }
 
 .background {
@@ -76,14 +67,14 @@ li, a {
   background-position: 10%;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: var(--color-border);
+  border-bottom-color: rgb(229, 229, 229);
 }
 
 .title {
   width: 100%;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgb(255, 255, 255);
   font-family: "Helvectica";
-  font-weight: bold;
+  font-weight: 900;
   font-size: clamp(1rem, 3.5vw, 3.5rem);
   line-height: 1.2;
   text-align: center;
@@ -91,10 +82,12 @@ li, a {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  opacity: 0.75;
 }
 
 .title .description {
   font-size: clamp(0.5rem, 1.5vw, 1.5rem);
+  font-weight: 500;
   font-style: italic;
 }
 
@@ -109,7 +102,7 @@ li, a {
 
 .container .projects {
   height: 100%;
-  background-color: var(--color-black);
+  background-color: rgb(32, 32, 32);;
 }
 
 .container .contact {
