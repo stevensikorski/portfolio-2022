@@ -14,31 +14,48 @@ body, html {
 }
 
 .header {
-  height: 68px;
+  height: 10vh;
   width: 100%;
   position: fixed;
 }
 
 .navigation {
-  height: 36px;
-  margin: 16px;
+  height: 5vh;
+  margin: 2.5vh;
 }
 
 .logo {
-  height: 36px;
-  width: 36px;
+  height: 5vh;
+  width: 5vh;
   float: left;
+}
+
+.logo:hover {
+  opacity: 0.75;
+  transition-duration: 250ms;
+}
+
+.links {
+  height: 3vh;
+  width: 3vh;
+  padding: 1vh 2vh;
+  float: right;
+}
+
+.links:hover {
+  opacity: 0.5;
+  transition-duration: 250ms;
 }
 
 li, a {
   color: rgb(255, 255, 255);
   font-family: "Helvetica";
-  font-size: 16px;
+  font-size: 2vh;
   font-weight: 600;
-  line-height: 2.2;
-  height: 36px;
+  line-height: 2.5;
+  height: 10vh;
   text-decoration: none;
-  padding: 0 10px;
+  padding: 0 1vh;
 }
 
 .tabs {
@@ -56,13 +73,13 @@ li, a {
 }
 
 .tabs li a:hover {
-  color: rgb(255, 255, 255);
-  opacity: 0.75;
+  opacity: 0.5;
+  transition-duration: 250ms;
 }
 
 .background {
   height: 100%;
-  background-image: url(../images/background-blur.png);
+  background: url(../images/background-blur.png) repeat fixed 100%;
   background-size: cover;
   background-position: 10%;
   border-bottom-width: 1px;
@@ -102,10 +119,17 @@ li, a {
 
 .container .projects {
   height: 100%;
-  background-color: rgb(32, 32, 32);;
+  background: url(../images/background-code.png) repeat fixed 100%;
+  background-size: cover;
 }
 
 .container .contact {
   height: 100%;
   background-color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .tabs {
+    display: none;
+  }
 }
