@@ -8,7 +8,7 @@ window.addEventListener("scroll", function(){
     let links = document.querySelectorAll(".links");
     let tabs = document.querySelectorAll("li a");
 
-    if (scroll < height - padding || scroll > 2 * height - padding && scroll < 3 * height - padding)
+    if (scroll < height - padding)
     {
         logo.style.filter = "invert(0)";
 
@@ -32,5 +32,15 @@ window.addEventListener("scroll", function(){
         {
             tabs[i].style.color = "rgb(0, 0, 0)";
         }
+    }
+
+    if (scroll > height)
+    {
+        console.log(1);
+        header.style.backgroundColor = "rgba(255, 255, 255, 1)";
+    }
+    else
+    {
+        header.style.backgroundColor = "rgba(255, 255, 255, 0)";
     }
 })
