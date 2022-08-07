@@ -36,7 +36,6 @@ window.addEventListener("scroll", function(){
 
     if (scroll > height)
     {
-        console.log(1);
         header.style.backgroundColor = "rgba(255, 255, 255, 1)";
     }
     else

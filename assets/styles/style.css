@@ -18,7 +18,6 @@ body, html {
   height: 10%;
   width: 100%;
   position: fixed;
-  background-color: white;
 }
 
 .navigation {
@@ -190,7 +189,7 @@ li, a {
   width: 100%;
   color: rgb(32, 32, 32);
   font-family: "Helvetica";
-  font-size: 1.5vh;
+  font-size: clamp(0.4rem, 0.8vw, 0.8rem);
   font-weight: 500;
   text-indent: 1.5vw;
   overflow: hidden;
@@ -200,14 +199,14 @@ li, a {
 .about .biolinks {
   height: 4vh;
   width: 100%;
-  padding: 0vh 35%;
+  padding: 0% 35%;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
 .about .biolink {
-  filter: invert(1);
+  color: rgb(32, 32, 32);
   margin: 3.5vh 1vh;
   height: 3vh;
   width: 3vh;
@@ -251,26 +250,24 @@ li, a {
   width: 100%;
   color: rgb(32, 32, 32);
   font-family: "Helvetica";
-  font-size: 1.5vh;
+  font-size: clamp(0.55rem, 1.2vw, 1.2rem);
   font-weight: 500;
   text-indent: 1.5vw;
   padding: 2vh 2vh;
   overflow: hidden;
-  padding: 2vh 2vh;
 }
 
 .about .techstack {
-  height: 5%;
+  height: 4vh;
   width: 100%;
-  padding: 0vh 35%;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
 .techstack .language {
   height: 3vh;
-  width: 3vw;
+  width: 3vh;
   color: rgb(32, 32, 32);
   margin: 3.5vh 1vh;
 }
@@ -329,6 +326,10 @@ li, a {
   }
 
   .about .aboutdesc {
+    padding: 2vh 0vh;
+  }
+
+  .about .aboutme {
     padding: 2vh 0vh;
   }
 }
