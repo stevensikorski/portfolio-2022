@@ -6,6 +6,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body, html {
@@ -14,13 +15,13 @@ body, html {
 }
 
 .header {
-  height: 10vh;
+  height: 10%;
   width: 100%;
   position: fixed;
 }
 
 .navigation {
-  height: 5vh;
+  height: 50%;
   margin: 2.5vh;
 }
 
@@ -31,14 +32,14 @@ body, html {
 }
 
 .logo:hover {
-  opacity: 0.75;
+  opacity: 0.5;
   transition-duration: 250ms;
 }
 
 .links {
   height: 3vh;
   width: 3vh;
-  padding: 1vh 2vh;
+  margin: 1vh;
   float: right;
 }
 
@@ -69,7 +70,7 @@ li, a {
 
 .tabs li {
   display: inline-block;
-  padding: 0px 5px;
+  padding: 0vh 1vh;
 }
 
 .tabs li a:hover {
@@ -81,13 +82,12 @@ li, a {
   height: 100%;
   background: url(../images/background-blur.png) repeat fixed 100%;
   background-size: cover;
-  background-position: 10%;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: rgb(229, 229, 229);
 }
 
-.title {
+.name {
   width: 100%;
   color: rgb(255, 255, 255);
   font-family: "Helvectica";
@@ -102,7 +102,7 @@ li, a {
   opacity: 0.75;
 }
 
-.title .description {
+.name .description {
   font-size: clamp(0.5rem, 1.5vw, 1.5rem);
   font-weight: 500;
   font-style: italic;
@@ -114,22 +114,180 @@ li, a {
 
 .container .about {
   height: 100%;
+  padding: 10vh 10vh;
   background-color: white;
+}
+
+.about .left {
+  float: left;
+  height: 100%;
+  width: 20%;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-color: rgb(229, 229, 229);
+  align-items: top;
+  justify-content: center;
+}
+
+.about .right {
+  float: right;
+  height: 100%;
+  width: 70%;
+}
+
+.about .picturespace {
+  height: 25vh;
+  width: 100%;
+  padding: 0 25%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.about .picture {
+  height: 22vh;
+  width: 22vh;
+  aspect-ratio: 1 / 1;
+  background-image: url(../images/background.png);
+  background-size: cover;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(229, 229, 229);
+}
+
+.about .biotitle {
+  height: 4vh;
+  width: 100%;
+  color: rgb(32, 32, 32);
+  font-family: "Helvetica";
+  font-size: 2.5vh;
+  font-weight: 600;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .biodesc {
+  height: 2vh;
+  width: 100%;
+  color: rgb(32, 32, 32);
+  font-family: "Helvetica";
+  font-size: 1.5vh;
+  font-weight: 300;
+  font-style: italic;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .bio {
+  height: 45vh;
+  width: 100%;
+  color: rgb(32, 32, 32);
+  font-family: "Helvetica";
+  font-size: 1.75vh;
+  font-weight: 500;
+  padding: 1vh 1vh;
+}
+
+.about .biolinks {
+  height: 3vh;
+  width: 100%;
+  padding: 0% 35%;
+}
+
+.about .biolink {
+  filter: invert(1);
+  height: 3vh;
+  width: 3vh;
+  align-items: center;
+  justify-content:center;
+}
+
+.about .biolink:hover {
+  opacity: 0.5;
 }
 
 .container .projects {
   height: 100%;
   background: url(../images/background-code.png) repeat fixed 100%;
   background-size: cover;
+  padding: 10vh 10vh;
 }
 
 .container .contact {
   height: 100%;
+  padding: 10vh 10vh;
   background-color: white;
+}
+
+.section {
+  height: 100%;
+  width: 100%;
 }
 
 @media only screen and (max-width: 767px) {
   .tabs {
+    display: none;
+  }
+
+  .background {
+    height: 100%;
+    background: none;
+    background-image: url(../images/background-blur.png);
+    background-size: cover;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(229, 229, 229);
+  }
+
+  .container .projects {
+    height: 100%;
+    background: none;
+    background-image: url(../images/background-code.png);
+    background-size: cover;
+    padding: 10vh 10vh;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .about .left {
+    height: 30%;
+    width: 100%;
+    border-right-width: 0px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-color: rgb(229, 229, 229);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about .right {
+    height: 70%;
+    width: 100%;
+  }
+
+  .about .biotitle {
+    display: none;
+  }
+
+  .about .bio {
+    display: none;
+  }
+
+  .about .biodesc {
+    display: none;
+  }
+
+  .about .biolinks {
+    display: none;
+  }
+
+  .about .biolink {
     display: none;
   }
 }
