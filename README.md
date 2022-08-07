@@ -1,1 +1,1 @@
-<a href="https://stevensikorski.github.io/portfolio">Portfolio Website</a>
+<a href="https://stevensikorski.github.io/portfolio" target="_blank">Portfolio Website</a>
