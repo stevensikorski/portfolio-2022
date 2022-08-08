@@ -80,7 +80,7 @@ li, a {
 
 .background {
   height: 100%;
-  background: url(../images/backgrounds/background-blur.png) repeat fixed 100%;
+  background: url(../images/background-blur.png) repeat fixed 100%;
   background-size: cover;
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -149,7 +149,7 @@ li, a {
   height: 20vh;
   width: 20vh;
   aspect-ratio: 1 / 1;
-  background-image: url(../images/backgrounds/background.png);
+  background-image: url(../images/background.png);
   background-size: cover;
   border-radius: 50%;
   border-width: 2px;
@@ -274,7 +274,7 @@ li, a {
 
 .projects {
   height: 100%;
-  background: url(../images/backgrounds/background-code.png) repeat fixed 100%;
+  background: url(../images/background-code.png) repeat fixed 100%;
   background-size: cover;
   padding: 10vh 10vh;
 }
@@ -298,7 +298,7 @@ li, a {
   .background {
     height: 100%;
     background: none;
-    background-image: url(../images/backgrounds/background-blur.png);
+    background-image: url(../images/background-blur.png);
     background-size: cover;
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -312,7 +312,7 @@ li, a {
   .projects {
     height: 100%;
     background: none;
-    background-image: url(../images/backgrounds/background-code.png);
+    background-image: url(../images/background-code.png);
     background-size: cover;
     padding: 10vh 5vh;
   }
@@ -363,7 +363,7 @@ li, a {
     height: 15vh;
     width: 15vh;
     aspect-ratio: 1 / 1;
-    background-image: url(../images/backgrounds/background-blur.png);
+    background-image: url(../images/background-blur.png);
     background-size: cover;
     border-radius: 50%;
     border-width: 2px;
