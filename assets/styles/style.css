@@ -175,8 +175,9 @@ li, a {
   width: 100%;
   color: rgb(32, 32, 32);
   font-family: "Helvetica";
-  font-size: 1.5vh;
+  font-size: clamp(0.35rem, 0.7vw, 0.7rem);
   font-weight: 300;
+  padding: 1.5vh;
   font-style: italic;
   display: flex;
   text-align: center;
@@ -201,15 +202,15 @@ li, a {
 }
 
 .about .bio {
-  height: 40vh;
+  height: 35vh;
   width: 100%;
   color: rgb(32, 32, 32);
   font-family: "Helvetica";
-  font-size: clamp(0.55rem, 0.9vw, 0.9rem);
+  font-size: clamp(0.65rem, 0.9vw, 0.9rem);
   font-weight: 300;
   text-indent: 1.5vw;
   overflow: hidden;
-  padding: 2vh 2vh;
+  padding: 0vh 2vh;
 }
 
 .about .biolinks {
@@ -277,7 +278,7 @@ li, a {
 
 .about .image1 {
   width: 40%;
-  height: 60%;
+  height: 65%;
   margin: 4vh 4vh;
   border-radius: 25px;
   background-image: url(../images/image1.png);
@@ -288,7 +289,7 @@ li, a {
 
 .about .image2 {
   width: 40%;
-  height: 60%;
+  height: 65%;
   margin: 4vh 4vh;
   border-radius: 25px;
   background-image: url(../images/image2.png);
