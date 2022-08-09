@@ -315,17 +315,7 @@ li, a {
   width: 100%;
 }
 
-@media only screen and (orientation: landscape) and (min-width: 1025px) {
-  .links {
-    display: none;
-  }
-} 
-
 @media only screen and (orientation: portrait) and (max-width: 1024px) {
-  .tabs {
-    display: none;
-  }
-
   .background {
     height: 100%;
     background: none;
@@ -417,6 +407,18 @@ li, a {
   }
 
   .about .biolink {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .links {
+    display: none;
+  }
+} 
+
+@media only screen and (max-width: 1024px) {
+  .tabs {
     display: none;
   }
 }
