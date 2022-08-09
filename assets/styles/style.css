@@ -31,21 +31,11 @@ body, html {
   float: left;
 }
 
-.logo:hover {
-  opacity: 0.5;
-  transition-duration: 250ms;
-}
-
 .links {
   height: 3vh;
   width: 3vh;
   margin: 1vh;
   float: right;
-}
-
-.links:hover {
-  opacity: 0.5;
-  transition-duration: 250ms;
 }
 
 li, a {
@@ -414,6 +404,16 @@ li, a {
 @media only screen and (min-width: 1025px) {
   .links {
     display: none;
+  }
+
+  .logo:hover {
+    opacity: 0.5;
+    transition-duration: 250ms;
+  }
+  
+  .links:hover {
+    opacity: 0.5;
+    transition-duration: 250ms;
   }
 } 
 
