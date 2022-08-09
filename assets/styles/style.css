@@ -384,7 +384,7 @@ li, a {
   .about .picturespace {
     height: 25vh;
     width: 100%;
-    padding: 0% 0%;
+    padding: 10% 25%;
     display: flex;
     align-items: center;
     justify-content: center;
