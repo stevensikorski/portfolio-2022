@@ -149,7 +149,7 @@ li, a {
   height: 20vh;
   width: 20vh;
   aspect-ratio: 1 / 1;
-  background-image: url(../images/background.png);
+  background-image: url(https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png);
   background-size: cover;
   border-radius: 50%;
   border-width: 2px;
@@ -176,6 +176,7 @@ li, a {
   color: rgb(32, 32, 32);
   font-family: "Helvetica";
   font-size: clamp(0.35rem, 0.7vw, 0.7rem);
+  line-height: 1.25;
   font-weight: 300;
   padding: 1.5vh;
   font-style: italic;
@@ -207,7 +208,8 @@ li, a {
   width: 100%;
   color: rgb(32, 32, 32);
   font-family: "Helvetica";
-  font-size: clamp(0.65rem, 0.9vw, 0.9rem);
+  line-height: 1.25;
+  font-size: clamp(0.7rem, 1vw, 1rem);
   font-weight: 300;
   text-indent: 1.5vw;
   overflow: hidden;
@@ -239,7 +241,7 @@ li, a {
   width: 100%;
   color: rgb(32, 32, 32);
   font-family: "Helvetica";
-  font-size: 2.25vh;
+  font-size: 2.75vh;
   font-weight: 600;
   padding: 2vh 2vh;
   display: flex;
@@ -253,7 +255,7 @@ li, a {
   width: 100%;
   color: rgb(32, 32, 32);
   font-family: "Helvetica";
-  font-size: 1.5vh;
+  font-size: 1.35vh;
   font-weight: 300;
   font-style: italic;
   padding: 2vh 2vh;
@@ -268,35 +270,30 @@ li, a {
   width: 100%;
   color: rgb(32, 32, 32);
   font-family: "Helvetica";
-  font-size: clamp(0.65rem, 1.2vw, 1.2rem);
+  font-size: clamp(0.5rem, 1.4vw, 1.5rem);
+  line-height: 1.25;
   font-weight: 300;
   text-indent: 1.5vw;
-  padding: 3vh 2vh;
+  padding: 10vh 2vh;
   overflow: hidden;
   align-items: center;
   justify-content: center;
 }
 
-.about .image1 {
-  width: 40%;
-  height: 65%;
-  margin: 4vh 4vh;
-  border-radius: 25px;
-  background-image: url(../images/image1.png);
-  background-position-y: 50%;
-  background-size: cover;
-  float: left;
+.about .quote {
+  margin: 3vh;
+  padding: 0vh 6%;
+  font-style: italic;
+  font-size: clamp(0.35rem, 1.2vw, 1.3rem);
+  color: rgb(100, 100, 100);
 }
 
-.about .image2 {
-  width: 40%;
-  height: 65%;
-  margin: 4vh 4vh;
-  border-radius: 25px;
-  background-image: url(../images/image2.png);
-  background-position-y: 30%;
-  background-size: cover;
+.about .author {
+  font-weight: 500;
+  font-style: italic;
+  font-size: clamp(0.2rem, 1vw, 1.1rem);
   float: right;
+  padding: 0% 10%;
 }
 
 .projects {
@@ -317,7 +314,13 @@ li, a {
   width: 100%;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 1025px) {
+  .links {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
   .tabs {
     display: none;
   }
@@ -359,15 +362,7 @@ li, a {
   .about .aboutme {
     padding: 2vh 0vh;
   }
-}
 
-@media only screen and (min-width: 913px) {
-  .links {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 912px) {
   .about .left {
     height: 30%;
     width: 100%;
@@ -376,8 +371,8 @@ li, a {
     border-bottom-style: solid;
     border-color: rgb(229, 229, 229);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
   }
 
   .about .right {
@@ -386,16 +381,18 @@ li, a {
     padding: 2vh 0vh;
   }
 
+  .about .picturespace {
+    height: 25vh;
+    width: 100%;
+    padding: 0% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .about .picture {
-    height: 15vh;
-    width: 15vh;
-    aspect-ratio: 1 / 1;
-    background-image: url(../images/background-blur.png);
-    background-size: cover;
-    border-radius: 50%;
-    border-width: 2px;
-    border-style: solid;
-    border-color: rgb(229, 229, 229);
+    height: 16vh;
+    width: 16vh;
   }
 
   .about .biotitle {
@@ -410,19 +407,15 @@ li, a {
     display: none;
   }
 
+  .about .techstack {
+    display: none;
+  }
+
   .about .biolinks {
     display: none;
   }
 
   .about .biolink {
-    display: none;
-  }
-
-  .about .image1 {
-    display: none;
-  }
-
-  .about .image2 {
     display: none;
   }
 }
