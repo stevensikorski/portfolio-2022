@@ -209,7 +209,7 @@ li, a {
   color: rgb(32, 32, 32);
   font-family: "Helvetica";
   line-height: 1.25;
-  font-size: clamp(0.7rem, 1vw, 1rem);
+  font-size: clamp(0.3rem, 1vw, 1rem);
   font-weight: 300;
   text-indent: 1.5vw;
   overflow: hidden;
@@ -274,14 +274,14 @@ li, a {
   line-height: 1.25;
   font-weight: 300;
   text-indent: 1.5vw;
-  padding: 10vh 2vh;
+  padding: 8vh 2vh;
   overflow: hidden;
   align-items: center;
   justify-content: center;
 }
 
 .about .quote {
-  margin: 3vh;
+  margin: 2vh;
   padding: 0vh 6%;
   font-style: italic;
   font-size: clamp(0.35rem, 1.2vw, 1.3rem);
@@ -289,6 +289,7 @@ li, a {
 }
 
 .about .author {
+  color: rgb(100, 100, 100);
   font-weight: 500;
   font-style: italic;
   font-size: clamp(0.2rem, 1vw, 1.1rem);
@@ -314,13 +315,13 @@ li, a {
   width: 100%;
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (orientation: landscape) and (min-width: 1025px) {
   .links {
     display: none;
   }
-}
+} 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (orientation: portrait) and (max-width: 1024px) {
   .tabs {
     display: none;
   }
