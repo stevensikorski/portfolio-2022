@@ -41,12 +41,12 @@ body, html {
 li, a {
   color: rgb(255, 255, 255);
   font-family: "Helvetica";
-  font-size: 2vh;
+  font-size: 1rem;
   font-weight: 600;
-  line-height: 2.5;
-  height: 10vh;
+  line-height: 1.5;
+  height: 0vh;
   text-decoration: none;
-  padding: 0 1vh;
+  margin: 1vh;
 }
 
 .tabs {
@@ -60,7 +60,7 @@ li, a {
 
 .tabs li {
   display: inline-block;
-  padding: 0vh 1vh;
+  padding: 0vh 0vh;
 }
 
 .tabs li a:hover {
@@ -112,7 +112,7 @@ li, a {
   float: left;
   height: 100%;
   width: 20%;
-  border-right-width: 2px;
+  border-right-width: 1px;
   border-right-style: solid;
   border-color: rgb(229, 229, 229);
   align-items: top;
@@ -150,9 +150,9 @@ li, a {
 .about .biotitle {
   height: 4vh;
   width: 100%;
-  color: rgb(32, 32, 32);
+  color: rgb(34, 48, 64);
   font-family: "Helvetica";
-  font-size: 2.25vh;
+  font-size: 1.5vw;
   font-weight: 600;
   display: flex;
   text-align: center;
@@ -163,7 +163,7 @@ li, a {
 .about .biodesc {
   height: 2vh;
   width: 100%;
-  color: rgb(32, 32, 32);
+  color: rgb(34, 48, 64);
   font-family: "Helvetica";
   font-size: clamp(0.35rem, 0.7vw, 0.7rem);
   line-height: 1.25;
@@ -189,14 +189,14 @@ li, a {
 .techstack .language {
   height: 2vh;
   width: 2vh;
-  color: rgb(32, 32, 32);
+  color: rgb(34, 48, 64);
   margin: 3.5vh 1vh;
 }
 
 .about .bio {
   height: 35vh;
   width: 100%;
-  color: rgb(32, 32, 32);
+  color: rgb(34, 48, 64);
   font-family: "Helvetica";
   line-height: 1.25;
   font-size: clamp(0.3rem, 1vw, 1rem);
@@ -207,31 +207,27 @@ li, a {
 }
 
 .about .biolinks {
-  height: 4vh;
+  height: 0vh;
   width: 100%;
-  padding: 0% 35%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: red;
 }
 
 .about .biolink {
-  color: rgb(32, 32, 32);
-  margin: 3.5vh 1vh;
+  color: rgb(34, 48, 64);
+  margin: 0vh 0.5vh;
   height: 3vh;
   width: 3vh;
-}
-
-.about .biolink:hover {
-  opacity: 0.5;
 }
 
 .about .abouttitle {
   height: 7%;
   width: 100%;
-  color: rgb(32, 32, 32);
+  color: rgb(34, 48, 64);
   font-family: "Helvetica";
-  font-size: 2.75vh;
+  font-size: 1.25rem;
   font-weight: 600;
   padding: 2vh 2vh;
   display: flex;
@@ -243,9 +239,9 @@ li, a {
 .about .aboutdesc {
   height: 3%;
   width: 100%;
-  color: rgb(32, 32, 32);
+  color: rgb(34, 48, 64);
   font-family: "Helvetica";
-  font-size: 1.35vh;
+  font-size: clamp(0.5rem, 0.9vw, 0.9rem);
   font-weight: 300;
   font-style: italic;
   padding: 2vh 2vh;
@@ -258,7 +254,7 @@ li, a {
 .about .aboutme {
   height: 85%;
   width: 100%;
-  color: rgb(32, 32, 32);
+  color: rgb(34, 48, 64);
   font-family: "Helvetica";
   font-size: clamp(0.5rem, 1.4vw, 1.5rem);
   line-height: 1.25;
@@ -292,6 +288,110 @@ li, a {
   background: url(../images/background-code.png) repeat fixed 100%;
   background-size: cover;
   padding: 10vh 10vh;
+}
+
+.projects .grid {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects .card {
+  height: 60vh;
+  width: 60vh;
+  margin: 1vw;
+  transition: height 50ms ease-out;
+}
+
+.projects .card:hover {
+  height: 65vh;
+  transition: height 50ms ease-in;
+}
+
+.card .card__image {
+  height: 25vh;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 25%;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+  background-color: rgb(50, 50, 50);
+}
+
+.card .card__details {
+  height: 35vh;
+  width: 100%;
+  border-bottom-left-radius: 1vw;
+  border-bottom-right-radius: 1vw;
+  background-color: rgb(50, 50, 50);
+}
+
+.card__details .card__title {
+  height: 15%;
+  width: 100%;;
+  color: rgb(240, 240, 240);
+  font-family: "Helvetica";
+  font-size: clamp(0.5rem, 1vw, 1rem);
+  font-weight: 600;
+  padding: 0vh 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.card__details .card__description {
+  height: 70%;
+  width: 100%;
+  color: rgb(230, 230, 230);
+  font-family: "Helvetica";
+  font-size: clamp(0.5rem, 1vw, 1rem);
+  font-weight: 500;
+  padding: 1vh 1vw;
+}
+
+.card__details .card__footer {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__footer .card__link__image {
+  height: 100%;
+  width: 6%;
+  margin: 0vh 0vh 0vh 0.5vw;
+}
+
+.card__footer .card__link {
+  height: 100%;
+  width: 40%;
+  color:rgb(150, 150, 150);
+  font-family: "Helvetica";
+  font-style: italic;
+  font-size: clamp(0.5rem, 0.9vw, 0.9rem);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.card__footer .card__techstack {
+  height: 100%;
+  width: 54%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.card__language {
+  height: 1.25vw;
+  width: 1.25vw;
+  padding: 0vw 0.5vw;
+  color: rgb(255, 255, 255);
 }
 
 .container .contact {
@@ -348,7 +448,7 @@ li, a {
     height: 30%;
     width: 100%;
     border-right-width: 0px;
-    border-bottom-width: 2px;
+    border-bottom-width: 1px;
     border-bottom-style: solid;
     border-color: rgb(229, 229, 229);
     display: flex;
@@ -399,6 +499,31 @@ li, a {
   .about .biolink {
     display: none;
   }
+
+  .projects .grid {
+    flex-direction: column;
+  }
+
+  .projects .card {
+    height: 60vw;
+    width: 60vw;
+    margin: 1vw;
+  }
+  
+  .card .card__image {
+    height: 25vw;
+    width: 100%;
+  }
+  
+  .card .card__details {
+    height: 35vw;
+    width: 100%;
+  }
+
+  .card__language {
+    height: 1.25vh;
+    width: 1.25vh;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
@@ -415,7 +540,15 @@ li, a {
     opacity: 0.5;
     transition-duration: 250ms;
   }
-} 
+
+  .about .biolink:hover {
+    opacity: 0.5;
+  }
+
+  .projects .card__link:hover {
+    opacity: 0.5;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
   .tabs {
