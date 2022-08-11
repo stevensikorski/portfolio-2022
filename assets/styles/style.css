@@ -334,7 +334,7 @@ li, a {
   width: 100%;;
   color: rgb(240, 240, 240);
   font-family: "Helvetica";
-  font-size: clamp(0.5rem, 1vw, 1rem);
+  font-size: clamp(0.5rem, 1.2vw, 1.2rem);
   font-weight: 600;
   padding: 0vh 1vw;
   display: flex;
