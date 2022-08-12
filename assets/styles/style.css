@@ -344,6 +344,7 @@ li, a {
   font-family: "Helvetica";
   font-size: clamp(0.5rem, 1vw, 1rem);
   font-weight: 500;
+  overflow: hidden;
   padding: 1vh 1vw;
 }
 
