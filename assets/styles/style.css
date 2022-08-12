@@ -302,7 +302,6 @@ li, a {
   height: 60vh;
   width: 60vh;
   margin: 1vw;
-  transition: height 50ms ease-out;
 }
 
 .card .card__image {
@@ -507,17 +506,6 @@ li, a {
   .projects .grid {
     flex-direction: column;
   }
-
-  .projects .card {
-    height: 60vw;
-    width: 60vw;
-    margin: 1vw;
-  }
-
-  .projects .card:hover {
-    height: 65vh;
-    transition: height 50ms ease-in;
-  }
   
   .card .card__image {
     height: 25vw;
@@ -561,6 +549,18 @@ li, a {
 
   .projects .card__link:hover {
     opacity: 0.5;
+  }
+
+  .projects .card {
+    height: 60vh;
+    width: 60vh;
+    margin: 1vw;
+    transition: height 50ms ease-in;
+  }
+
+  .projects .card:hover {
+    height: 65vh;
+    transition: height 50ms ease-out;
   }
 }
 
