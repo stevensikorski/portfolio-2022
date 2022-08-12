@@ -305,11 +305,6 @@ li, a {
   transition: height 50ms ease-out;
 }
 
-.projects .card:hover {
-  height: 65vh;
-  transition: height 50ms ease-in;
-}
-
 .card .card__image {
   height: 25vh;
   width: 100%;
@@ -508,6 +503,11 @@ li, a {
     height: 60vw;
     width: 60vw;
     margin: 1vw;
+  }
+
+  .projects .card:hover {
+    height: 65vh;
+    transition: height 50ms ease-in;
   }
   
   .card .card__image {
