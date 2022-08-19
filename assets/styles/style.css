@@ -150,7 +150,7 @@ li, a {
 .about .biotitle {
   height: 4vh;
   width: 100%;
-  color: rgb(34, 48, 64);
+  color: rgb(32, 32, 32);
   font-family: "Helvetica";
   font-size: 1.5vw;
   font-weight: 600;
@@ -163,7 +163,7 @@ li, a {
 .about .biodesc {
   height: 2vh;
   width: 100%;
-  color: rgb(34, 48, 64);
+  color: rgb(32, 32, 32);
   font-family: "Helvetica";
   font-size: clamp(0.35rem, 0.7vw, 0.7rem);
   line-height: 1.25;
@@ -189,14 +189,14 @@ li, a {
 .techstack .language {
   height: 2vh;
   width: 2vh;
-  color: rgb(34, 48, 64);
+  color: rgb(32, 32, 32);
   margin: 3.5vh 1vh;
 }
 
 .about .bio {
   height: 35vh;
   width: 100%;
-  color: rgb(34, 48, 64);
+  color: rgb(32, 32, 32);
   font-family: "Helvetica";
   line-height: 1.25;
   font-size: clamp(0.3rem, 1vw, 1rem);
@@ -216,7 +216,7 @@ li, a {
 }
 
 .about .biolink {
-  color: rgb(34, 48, 64);
+  color: rgb(32, 32, 32);
   margin: 0vh 0.5vh;
   height: 3vh;
   width: 3vh;
@@ -225,7 +225,7 @@ li, a {
 .about .abouttitle {
   height: 7%;
   width: 100%;
-  color: rgb(34, 48, 64);
+  color: rgb(32, 32, 32);
   font-family: "Helvetica";
   font-size: 1.25rem;
   font-weight: 600;
@@ -239,7 +239,7 @@ li, a {
 .about .aboutdesc {
   height: 3%;
   width: 100%;
-  color: rgb(34, 48, 64);
+  color: rgb(32, 32, 32);
   font-family: "Helvetica";
   font-size: clamp(0.5rem, 0.9vw, 0.9rem);
   font-weight: 300;
@@ -254,7 +254,7 @@ li, a {
 .about .aboutme {
   height: 85%;
   width: 100%;
-  color: rgb(34, 48, 64);
+  color: rgb(32, 32, 32);
   font-family: "Helvetica";
   font-size: clamp(0.5rem, 1.4vw, 1.5rem);
   line-height: 1.25;
