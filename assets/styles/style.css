@@ -555,12 +555,13 @@ li, a {
     height: 60vh;
     width: 60vh;
     margin: 1vw;
-    transition: height 50ms ease-in;
+    scale: 1;
+    transition: scale 50ms ease-in;
   }
 
   .projects .card:hover {
-    height: 65vh;
-    transition: height 50ms ease-out;
+    scale: 1.05;
+    transition: scale 50ms ease-out;
   }
 }
 
