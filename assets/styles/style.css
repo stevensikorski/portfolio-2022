@@ -198,7 +198,7 @@ li, a {
   width: 100%;
   color: rgb(32, 32, 32);
   font-family: "Helvetica";
-  line-height: 1.25;
+  line-height: 1.4;
   font-size: clamp(0.3rem, 1vw, 1rem);
   font-weight: 300;
   text-indent: 1.5vw;
@@ -207,17 +207,16 @@ li, a {
 }
 
 .about .biolinks {
-  height: 0vh;
+  height: 2vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
 }
 
 .about .biolink {
   color: rgb(32, 32, 32);
-  margin: 0vh 0.5vh;
+  margin: 0vh 0.5vw;
   height: 3vh;
   width: 3vh;
 }
@@ -257,13 +256,15 @@ li, a {
   color: rgb(32, 32, 32);
   font-family: "Helvetica";
   font-size: clamp(0.5rem, 1.4vw, 1.5rem);
-  line-height: 1.25;
+  line-height: 1.5;
   font-weight: 300;
   text-indent: 1.5vw;
-  padding: 8vh 2vh;
+  padding: 5vh 2vh;
   overflow: hidden;
+  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
+  flex-direction: column;
 }
 
 .about .quote {
@@ -438,7 +439,7 @@ li, a {
   }
 
   .about .aboutme {
-    padding: 2vh 0vh;
+    padding: 1.5vh 0vh;
   }
 
   .about .left {
