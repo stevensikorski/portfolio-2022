@@ -163,7 +163,7 @@ li, a {
 .about .biodesc {
   height: 2vh;
   width: 100%;
-  color: rgb(32, 32, 32);
+  color: rgb(128, 128, 128);
   font-family: "Helvetica";
   font-size: clamp(0.35rem, 0.7vw, 0.7rem);
   line-height: 1.25;
@@ -196,9 +196,9 @@ li, a {
 .about .bio {
   height: 35vh;
   width: 100%;
-  color: rgb(32, 32, 32);
+  color: rgb(64, 64, 64);
   font-family: "Helvetica";
-  line-height: 1.4;
+  line-height: 1.5;
   font-size: clamp(0.3rem, 1vw, 1rem);
   font-weight: 300;
   text-indent: 1.5vw;
