@@ -414,19 +414,19 @@ li, a {
     border-bottom-color: rgb(229, 229, 229);
   }
   
-  .about {
+  .container .about {
     padding: 10vh 5vh;
   }
 
-  .projects {
-    height: 100%;
+  .container .projects {
+    height: 125%;
     background: none;
     background-image: url(../images/background-code.png);
     background-size: cover;
     padding: 10vh 5vh;
   }
 
-  .contact {
+  .container .contact {
     padding: 10vh 5vh;
   }
 
