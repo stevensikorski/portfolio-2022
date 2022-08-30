@@ -419,7 +419,7 @@ li, a {
   }
 
   .container .projects {
-    height: 125%;
+    height: 175%;
     background: none;
     background-image: url(../images/background-code.png);
     background-size: cover;
