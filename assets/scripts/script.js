@@ -2,12 +2,12 @@ window.addEventListener("scroll", function(){
     const padding = 16;
 
     let scroll = window.scrollY;
-    let height = window.innerHeight;
+    let height = window.innerHeight || window.screen.height;
     let logo = document.querySelector(".logo");
     let links = document.querySelectorAll(".links");
     let tabs = document.querySelectorAll("li a");
 
-    console.log(scroll, height)
+    console.log(scroll, height);
 
     if (scroll < height - padding || scroll > 2 * height - padding && scroll < 3 * height - padding)
     {
