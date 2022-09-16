@@ -2,7 +2,7 @@ window.addEventListener("scroll", function(){
     const padding = 16;
 
     let scroll = window.scrollY;
-    let height = window.screen.height;
+    let height = window.innerHeight;
     let logo = document.querySelector(".logo");
     let links = document.querySelectorAll(".links");
     let tabs = document.querySelectorAll("li a");
