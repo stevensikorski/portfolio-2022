@@ -70,7 +70,7 @@ li, a {
 
 .background {
   height: 100%;
-  background: url(../images/background-blur.png) repeat fixed 100%;
+  background: url(../images/background2-blur.png) repeat fixed 100%;
   background-size: cover;
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -407,7 +407,7 @@ li, a {
   .background {
     height: 100%;
     background: none;
-    background-image: url(../images/background-blur.png);
+    background-image: url(../images/background2-blur.png);
     background-size: cover;
     border-bottom-width: 1px;
     border-bottom-style: solid;
